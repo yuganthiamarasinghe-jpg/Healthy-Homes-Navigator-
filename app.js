@@ -17,7 +17,19 @@ function issueDetailPage(){
  <section class="issue-section"><h2>♧ Choose a safe next step</h2><p>You can keep a private record, explore your concerns, or speak to an independent support service before contacting your landlord. The app will not report anything automatically.</p>
  <div class="toolbar"><button class="btn" data-go="2">Describe my concern →</button><button class="btn secondary" data-go="3">Explore my worries →</button><button class="btn secondary" data-go="12">Find independent support ↗</button></div></section>
  <section class="issue-section"><h2>What about a 14-day notice?</h2><p>A tenant may be able to use a formal notice to remedy a breach. It is not the only first step, and a maintenance request is different from a formal notice. Get advice on the appropriate process and wording before taking action if you are concerned about retaliation or your housing security.</p><a href="https://www.tenancy.govt.nz/" target="_blank" rel="noopener">Check the current official process ↗</a></section>
- </div></div><div class="notice warm">Research prototype only. Use fictional information when testing. No photo-based diagnosis or automatic reporting.</div></main>`;
+ <div class="notice warm">
+  <strong>About Healthy Homes Navigator</strong>
+  <p>
+    This website is a research prototype designed to help
+    tenants understand Healthy Homes Standards and explore
+    their options. It provides general information, not
+    legal advice. Your information is not automatically
+    shared with landlords or other organisations.
+  </p>
+  <button class="back" id="privacy-inline">
+    View privacy details ↗
+  </button>
+</div>
 }
 const $=s=>document.querySelector(s);
 const titles=['Welcome','Your concern','What is happening','Your worries','Understand your options','Choose your next step','Organise evidence','Review your summary','Prepare a request','Your sharing choices','Your action plan','Track progress','Support & finish'];
