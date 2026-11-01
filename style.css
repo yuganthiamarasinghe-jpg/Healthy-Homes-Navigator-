@@ -21,3 +21,16 @@
 .issue-detail-content{display:grid;gap:16px}.issue-section{background:white;border:1px solid var(--line);border-radius:13px;padding:25px}
 .issue-section h2{font-size:22px;letter-spacing:-.025em}.issue-section p{font-size:14px}
 @media(max-width:760px){.issue-detail-grid{grid-template-columns:1fr}.issue-hero-photo.sample-picture{height:240px}.issue-section{padding:20px}}
+
+/* Stage 1: My Home hub and accessible navigation */
+.home-dashboard{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:25px 0}
+.home-stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:6px}
+.home-stat strong{font:700 27px Manrope,Arial,sans-serif;color:var(--green)}
+.home-stat span{font-size:12px;color:var(--muted)}
+.home-hub{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.home-hub .card h2{font-size:23px;margin-bottom:12px}
+.home-hub .card p{min-height:55px}
+header{height:auto;min-height:96px;gap:18px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+header nav{flex-wrap:wrap;justify-content:flex-end;gap:14px}
+@media(max-width:900px){.home-dashboard{grid-template-columns:repeat(2,minmax(0,1fr))}header nav>button:first-child{display:inline-block}}
+@media(max-width:650px){header{align-items:flex-start}header nav{width:100%;justify-content:flex-start;gap:10px}header nav button{font-size:12px}.home-hub{grid-template-columns:1fr}.home-stat{padding:15px}.home-hub .card p{min-height:0}}
