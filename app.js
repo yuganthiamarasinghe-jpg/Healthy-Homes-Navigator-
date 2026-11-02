@@ -122,7 +122,7 @@ function activateConcern(id){
  syncActiveConcern();
  const record=state.concernRecords.find(x=>x.id===id);if(!record)return;
  for(const k of concernFields)state[k]=structuredClone(record.data[k]===undefined?blank()[k]:record.data[k]);
- state.activeConcernId=id;state.step=15;save();go(15);
+ state.activeConcernId=id;save();go(2);
 }
 function startAnotherConcern(){
  syncActiveConcern();
